@@ -1,0 +1,6 @@
+/vendor
+/composer.lock
+/dist
+/mix-manifest.json
+/node_modules
+/yarn.lock

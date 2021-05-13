@@ -1,0 +1,42 @@
+pages:
+  fields:
+    -
+      handle: from
+      field:
+        display: From
+        type: entries
+        collections:
+          - pages
+        max_items: 1
+        mode: select
+        width: 25
+    -
+      handle: to
+      field:
+        display: To
+        type: entries
+        collections:
+          - pages
+        max_items: 1
+        mode: select
+        width: 25
+    -
+      handle: start_at
+      field:
+        display: Start
+        type: date
+        width: 25
+        time_enabled: true
+        icon: date
+    -
+      handle: end_at
+      field:
+        display: End
+        type: date
+        width: 25
+        time_enabled: true
+        icon: date
+  display: Redirects
+  type: grid
+  mode: stacked
+  add_row: 'Add Redirect'
