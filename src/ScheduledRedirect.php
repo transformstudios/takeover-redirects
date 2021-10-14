@@ -20,7 +20,7 @@ class ScheduledRedirect
 
     public function active(Request $request)
     {
-        return  ! $this->internal($request) && $this->matches($request) && $this->current();
+        return  $this->current() && ! $this->internal($request) && $this->matches($request);
     }
 
     public function current(): bool
