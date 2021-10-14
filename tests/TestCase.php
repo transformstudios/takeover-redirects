@@ -29,7 +29,7 @@ abstract class TestCase extends OrchestraTestCase
         $app->make(Manifest::class)->manifest = [
             'transformstudios/takeover-redirects' => [
                 'id' => 'transformstudios/takeover-redirects',
-                'namespace' => 'TransformStudios\\TakeoverRedirects\\',
+                'namespace' => 'TransformStudios\\TakeoverRedirects',
             ],
         ];
 
