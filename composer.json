@@ -2,7 +2,7 @@
     "name": "transformstudios/takeover-redirects",
     "require": {
         "php": "^8.0",
-        "laravel/framework": "^8.59",
+        "laravel/framework": "^8.59 || ^9.9",
         "statamic/cms": "^3.2",
         "edalzell/forma": "^1.0"
     },
