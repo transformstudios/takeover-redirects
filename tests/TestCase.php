@@ -10,6 +10,20 @@ use TransformStudios\TakeoverRedirects\ServiceProvider;
 
 abstract class TestCase extends OrchestraTestCase
 {
+    use PreventSavingStacheItemsToDisk;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+    }
+
+    public function tearDown(): void
+    {
+        $this->deleteFakeStacheDirectory();
+
+        parent::tearDown();
+    }
+
     protected function getPackageProviders($app)
     {
         return [StatamicServiceProvider::class, ServiceProvider::class];
