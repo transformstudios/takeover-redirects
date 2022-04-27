@@ -41,12 +41,12 @@ class ScheduledRedirect
         return Str::of($this->from())->is($request->url());
     }
 
-    public function from(): string
+    public function from(): ?string
     {
         return $this->urlFrom('from');
     }
 
-    public function to(): string
+    public function to(): ?string
     {
         return $this->urlFrom('to');
     }
@@ -69,8 +69,8 @@ class ScheduledRedirect
         return Carbon::maxValue();
     }
 
-    private function urlFrom(string $field): string
+    private function urlFrom(string $field): ?string
     {
-        return EntryAPI::find(Arr::get($this->data, $field))->absoluteUrl();
+        return EntryAPI::find(Arr::get($this->data, $field))?->absoluteUrl();
     }
 }
