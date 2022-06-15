@@ -7,6 +7,7 @@ pages:
         type: entries
         collections:
           - pages
+          - campaigns
         max_items: 1
         mode: select
         width: 25
@@ -17,6 +18,7 @@ pages:
         type: entries
         collections:
           - pages
+          - campaigns
         max_items: 1
         mode: select
         width: 25
