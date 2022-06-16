@@ -1,9 +1,9 @@
 {
     "name": "transformstudios/takeover-redirects",
     "require": {
-        "php": "^8.0",
-        "laravel/framework": "^8.59 || ^9.9",
-        "statamic/cms": "^3.2",
+        "php": "^8.1",
+        "laravel/framework": "^9.9",
+        "statamic/cms": "^3.3",
         "edalzell/forma": "^1.0"
     },
     "require-dev": {
