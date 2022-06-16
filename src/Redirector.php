@@ -9,7 +9,7 @@ class Redirector
     public static function getRedirect(Request $request): ?string
     {
         $redirects = collect(config('takeover-redirects.pages'))
-            ->map(fn ($redirect) => new ScheduledRedirect($redirect));
+            ->mapInto(ScheduledRedirect::class);
 
         if ($redirect = $redirects->first(fn (ScheduledRedirect $redirect) => $redirect->active($request))) {
             return $redirect->to();

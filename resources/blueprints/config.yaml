@@ -26,18 +26,30 @@ pages:
       handle: start_at
       field:
         display: Start
+        mode: single
         type: date
         width: 25
         time_enabled: true
         icon: date
+        time_seconds_enabled: false
+        full_width: false
+        inline: false
+        columns: 1
+        rows: 1
     -
       handle: end_at
       field:
         display: End
+        mode: single
         type: date
         width: 25
         time_enabled: true
         icon: date
+        time_seconds_enabled: false
+        full_width: false
+        inline: false
+        columns: 1
+        rows: 1
   display: Redirects
   type: grid
   mode: stacked

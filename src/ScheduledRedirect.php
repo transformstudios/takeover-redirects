@@ -54,7 +54,7 @@ class ScheduledRedirect
     public function start(): Carbon
     {
         if ($start = Arr::get($this->data, 'start_at')) {
-            return Carbon::createFromTimeString($start);
+            return Carbon::parse($start);
         }
 
         return Carbon::minValue();
@@ -63,7 +63,7 @@ class ScheduledRedirect
     public function end(): Carbon
     {
         if ($end = Arr::get($this->data, 'end_at')) {
-            return Carbon::createFromTimeString($end);
+            return Carbon::parse($end);
         }
 
         return Carbon::maxValue();
